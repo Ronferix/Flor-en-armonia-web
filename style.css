@@ -419,20 +419,30 @@ h1, h2, h3, h4 {
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  background: none;
+  border: 1px solid rgba(139,115,85,0.25);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  color: var(--taupe);
+  transition: border-color 0.3s, color 0.3s, transform 0.3s;
+  animation: scroll-bob 2.4s ease-in-out infinite;
 }
-.hero__scroll-line {
+.hero__scroll:hover {
+  border-color: var(--rose);
+  color: var(--rose);
+  transform: translateX(-50%) translateY(3px);
+  animation: none;
+}
+.hero__scroll-arrow {
   display: block;
-  width: 1px;
-  height: 48px;
-  background: linear-gradient(180deg, var(--rose), transparent);
-  animation: scroll-line 2s ease-in-out infinite;
 }
-@keyframes scroll-line {
-  0%   { opacity: 0; transform: scaleY(0); transform-origin: top; }
-  50%  { opacity: 1; transform: scaleY(1); }
-  100% { opacity: 0; transform: translateY(20px); }
+@keyframes scroll-bob {
+  0%, 100% { transform: translateX(-50%) translateY(0);   opacity: 0.7; }
+  50%       { transform: translateX(-50%) translateY(6px); opacity: 1;   }
 }
 
 /* ── FILOSOFÍA ────────────────────────────────────────────── */

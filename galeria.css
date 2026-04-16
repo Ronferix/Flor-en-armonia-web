@@ -41,10 +41,22 @@
 .slide.active {
   opacity: 1;
 }
+.slide__bg {
+  position: absolute;
+  inset: -30px;
+  background-size: cover;
+  background-position: center;
+  filter: blur(24px) brightness(0.35) saturate(0.8);
+  transform: scale(1.08);
+  z-index: 0;
+}
+
 .slide img {
+  position: relative;
+  z-index: 1;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
   display: block;
   pointer-events: none;

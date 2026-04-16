@@ -93,6 +93,11 @@ if (IMAGENES.length === 0) {
     const slide = document.createElement('div');
     slide.className = 'slide' + (i === 0 ? ' active' : '');
 
+    const bg = document.createElement('div');
+    bg.className = 'slide__bg';
+    bg.style.backgroundImage = `url(${src})`;
+    slide.appendChild(bg);
+
     const img = document.createElement('img');
     img.src      = src;
     img.alt      = `Arreglo floral ${i + 1}`;

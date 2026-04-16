@@ -802,18 +802,46 @@ h1, h2, h3, h4 {
   flex-direction: column;
   gap: 16px;
 }
-.trabajo__img-wrap {
+
+.trabajo__slider {
+  position: relative;
   border-radius: var(--radius);
   overflow: hidden;
   border: 1px solid rgba(201,169,154,0.2);
+  background: var(--warm);
 }
-.trabajo__img-wrap img {
+
+.trabajo__slide {
   width: 100%;
   height: auto;
   display: block;
-  transition: transform 0.55s var(--ease-out);
+  position: absolute;
+  top: 0; left: 0;
+  opacity: 0;
+  transition: opacity 0.9s var(--ease-out);
 }
-.trabajo__img-wrap:hover img { transform: scale(1.02); }
+.trabajo__slide.active {
+  opacity: 1;
+  position: relative;
+}
+
+.trabajo__dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.trabajo__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(139,115,85,0.25);
+  transition: background 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+.trabajo__dot.active {
+  background: var(--taupe);
+  transform: scale(1.35);
+}
 
 @media (max-width: 900px) {
   .nuestro-trabajo__grid { grid-template-columns: 1fr; gap: 40px; }

@@ -139,6 +139,22 @@ if (form) {
   });
 }
 
+// ── Mini slideshow "Nuestro trabajo" ──────────────────────
+const trabajoSlides = document.querySelectorAll('.trabajo__slide');
+const trabajoDots   = document.querySelectorAll('.trabajo__dot');
+if (trabajoSlides.length) {
+  let trabajoCurrent = 0;
+  function trabajoGoTo(n) {
+    trabajoSlides[trabajoCurrent].classList.remove('active');
+    trabajoDots[trabajoCurrent].classList.remove('active');
+    trabajoCurrent = (n + trabajoSlides.length) % trabajoSlides.length;
+    trabajoSlides[trabajoCurrent].classList.add('active');
+    trabajoDots[trabajoCurrent].classList.add('active');
+  }
+  trabajoDots.forEach((dot, i) => dot.addEventListener('click', () => trabajoGoTo(i)));
+  setInterval(() => trabajoGoTo(trabajoCurrent + 1), 3500);
+}
+
 // ── Smooth anchor scroll with nav offset ──────────────────
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', (e) => {

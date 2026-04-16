@@ -421,24 +421,29 @@ h1, h2, h3, h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: none;
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
   border: 1px solid rgba(139,115,85,0.25);
   border-radius: 50%;
   width: 44px;
   height: 44px;
+  min-width: 44px;
+  padding: 0;
   cursor: pointer;
   color: var(--taupe);
-  transition: border-color 0.3s, color 0.3s, transform 0.3s;
+  transition: border-color 0.3s, color 0.3s;
   animation: scroll-bob 2.4s ease-in-out infinite;
 }
 .hero__scroll:hover {
   border-color: var(--rose);
   color: var(--rose);
-  transform: translateX(-50%) translateY(3px);
   animation: none;
+  transform: translateX(-50%) translateY(3px);
 }
 .hero__scroll-arrow {
   display: block;
+  flex-shrink: 0;
 }
 @keyframes scroll-bob {
   0%, 100% { transform: translateX(-50%) translateY(0);   opacity: 0.7; }

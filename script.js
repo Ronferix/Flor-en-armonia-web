@@ -139,17 +139,6 @@ if (form) {
   });
 }
 
-// ── Hero scroll arrow ──────────────────────────────────────
-const heroScrollBtn = document.getElementById('heroScrollBtn');
-if (heroScrollBtn) {
-  heroScrollBtn.addEventListener('click', () => {
-    const target = document.getElementById('filosofia');
-    if (!target) return;
-    const top = target.getBoundingClientRect().top + window.scrollY - nav.offsetHeight;
-    window.scrollTo({ top, behavior: 'smooth' });
-  });
-}
-
 // ── Smooth anchor scroll with nav offset ──────────────────
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', (e) => {

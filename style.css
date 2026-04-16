@@ -501,7 +501,7 @@ h1, h2, h3, h4 {
 .pillar__icon path,
 .pillar__icon line,
 .pillar__icon ellipse,
-.pillar__icon circle { stroke-width: 1.8; }
+.pillar__icon circle { stroke-width: 1.8; stroke: var(--taupe); }
 .pillar h3 {
   font-family: var(--ff-head);
   font-size: 1.2rem;
@@ -632,7 +632,7 @@ h1, h2, h3, h4 {
 .ingrediente__icon path,
 .ingrediente__icon line,
 .ingrediente__icon ellipse,
-.ingrediente__icon circle { stroke-width: 1.6; }
+.ingrediente__icon circle { stroke-width: 1.6; stroke: var(--taupe); }
 .ingrediente span {
   font-size: 13px;
   font-weight: 400;

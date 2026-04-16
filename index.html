@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flor en Armonía — Concepto Floral</title>
+  <meta name="description" content="Darle sentido a tus intenciones a través de arreglos y composiciones florales. Suscripciones personalizadas nutridas con cuarzos y remedios florales de Bach." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ─── NAV ─────────────────────────────────────────────── -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#inicio" class="nav__logo">
+        <img src="Logo/Logo.png" alt="Flor en Armonía" />
+      </a>
+      <nav class="nav__links">
+        <a href="#filosofia">Filosofía</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#suscripciones">Suscripciones</a>
+        <a href="galeria.html">Nuestro trabajo</a>
+        <a href="#contacto" class="nav__cta">Cotizar</a>
+      </nav>
+      <button class="nav__burger" aria-label="Menú" id="burger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="#filosofia" class="mobile-link">Filosofía</a>
+      <a href="#proceso" class="mobile-link">Proceso</a>
+      <a href="#suscripciones" class="mobile-link">Suscripciones</a>
+      <a href="galeria.html" class="mobile-link">Nuestro trabajo</a>
+      <a href="#contacto" class="mobile-link">Cotizar</a>
+    </div>
+  </header>
+
+  <!-- ─── HERO ─────────────────────────────────────────────── -->
+  <section class="hero" id="inicio">
+    <div class="hero__bg">
+      <div class="hero__orb hero__orb--1"></div>
+      <div class="hero__orb hero__orb--2"></div>
+      <div class="hero__orb hero__orb--3"></div>
+    </div>
+    <div class="hero__deco hero__deco--tl">
+      <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M100 10 Q130 40 100 70 Q70 40 100 10Z" stroke="#C9A99A" stroke-width="0.8" fill="none" opacity="0.5"/>
+        <path d="M100 30 Q140 60 100 90 Q60 60 100 30Z" stroke="#9CAF88" stroke-width="0.6" fill="none" opacity="0.4"/>
+        <line x1="100" y1="10" x2="100" y2="140" stroke="#C9A99A" stroke-width="0.6" opacity="0.4"/>
+        <circle cx="100" cy="145" r="4" stroke="#C9A99A" stroke-width="0.8" fill="none" opacity="0.5"/>
+        <path d="M80 50 Q65 35 55 50 Q65 65 80 50Z" stroke="#9CAF88" stroke-width="0.6" fill="none" opacity="0.5"/>
+        <path d="M120 50 Q135 35 145 50 Q135 65 120 50Z" stroke="#9CAF88" stroke-width="0.6" fill="none" opacity="0.5"/>
+        <path d="M85 80 Q70 65 60 80 Q70 95 85 80Z" stroke="#C9A99A" stroke-width="0.5" fill="none" opacity="0.4"/>
+        <path d="M115 80 Q130 65 140 80 Q130 95 115 80Z" stroke="#C9A99A" stroke-width="0.5" fill="none" opacity="0.4"/>
+      </svg>
+    </div>
+    <div class="hero__deco hero__deco--br">
+      <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="100" r="70" stroke="#9CAF88" stroke-width="0.5" fill="none" opacity="0.3"/>
+        <circle cx="100" cy="100" r="55" stroke="#C9A99A" stroke-width="0.5" fill="none" opacity="0.25"/>
+        <path d="M100 30 Q120 60 100 90 Q80 60 100 30Z" stroke="#C9A99A" stroke-width="0.7" fill="none" opacity="0.4"/>
+        <path d="M170 100 Q140 120 110 100 Q140 80 170 100Z" stroke="#9CAF88" stroke-width="0.7" fill="none" opacity="0.4"/>
+        <path d="M100 170 Q80 140 100 110 Q120 140 100 170Z" stroke="#C9A99A" stroke-width="0.7" fill="none" opacity="0.4"/>
+        <path d="M30 100 Q60 80 90 100 Q60 120 30 100Z" stroke="#9CAF88" stroke-width="0.7" fill="none" opacity="0.4"/>
+      </svg>
+    </div>
+    <div class="hero__content">
+      <div class="hero__logo-wrap reveal">
+        <div class="hero__logo-shadow">
+          <img src="Logo/Logo.png" alt="Flor en Armonía" class="hero__logo" />
+        </div>
+      </div>
+      <p class="hero__tagline reveal reveal--delay-1">
+        Darle sentido a tus intenciones<br />a través de arreglos y composiciones florales.
+      </p>
+      <div class="hero__divider reveal reveal--delay-2">
+        <span></span>
+        <svg width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3" fill="#C9A99A"/><circle cx="10" cy="10" r="7" stroke="#C9A99A" stroke-width="0.8" fill="none"/></svg>
+        <span></span>
+      </div>
+      <p class="hero__sub reveal reveal--delay-3">Suscripciones · Arreglos personalizados · Servicio intencionado</p>
+      <a href="#contacto" class="btn btn--primary reveal reveal--delay-4">Inicia tu proceso</a>
+    </div>
+    <div class="hero__scroll">
+      <span class="hero__scroll-line"></span>
+    </div>
+  </section>
+
+  <!-- ─── FILOSOFÍA ─────────────────────────────────────────── -->
+  <section class="section filosofia" id="filosofia">
+    <div class="container">
+      <div class="section-label reveal">Nuestra esencia</div>
+      <h2 class="section-title reveal">
+        Equilibrio y limpieza<br /><em>para tu energía</em>
+      </h2>
+      <div class="filosofia__grid">
+        <div class="filosofia__text reveal">
+          <p class="lead">
+            Buscamos favorecer y resaltar tus espacios mientras equilibramos y limpiamos tu energía.
+          </p>
+          <p>
+            Cada arreglo floral que creamos nace de una intención consciente. No son solo flores: son vehículos de transformación, portadores de anhelos y catalizadores de bienestar.
+          </p>
+          <p>
+            Creemos que la belleza y la armonía espiritual van de la mano. Por eso cada composición se nutre con agua de cuarzos, remedios florales de Bach y otros sistemas vibracionales, para que la flor sea tanto estética como medicina para el alma.
+          </p>
+        </div>
+        <div class="filosofia__pillars reveal reveal--delay-1">
+          <div class="pillar">
+            <div class="pillar__icon">
+              <!-- Intención: llama -->
+              <svg viewBox="0 0 60 60" fill="none">
+                <path d="M30 10 C30 10 20 24 20 34 C20 41.7 24.5 48 30 48 C35.5 48 40 41.7 40 34 C40 24 30 10 30 10Z" stroke="#9CAF88" stroke-width="1.1" fill="none"/>
+                <path d="M30 28 C30 28 25 34 25 38 C25 41.3 27.2 44 30 44 C32.8 44 35 41.3 35 38 C35 34 30 28 30 28Z" stroke="#C9A99A" stroke-width="0.9" fill="none"/>
+              </svg>
+            </div>
+            <h3>Intención</h3>
+            <p>Todo diseño parte de tus anhelos y propósitos más profundos.</p>
+          </div>
+          <div class="pillar">
+            <div class="pillar__icon">
+              <!-- Equilibrio: flor de loto -->
+              <svg viewBox="0 0 60 60" fill="none">
+                <path d="M10 44 Q30 40 50 44" stroke="#9CAF88" stroke-width="0.9" fill="none"/>
+                <path d="M30 44 C28 36 27 27 30 18 C33 27 32 36 30 44Z" stroke="#C9A99A" stroke-width="1" fill="none"/>
+                <path d="M30 44 C23 40 17 33 20 22 C26 30 29 40 30 44Z" stroke="#9CAF88" stroke-width="0.9" fill="none"/>
+                <path d="M30 44 C37 40 43 33 40 22 C34 30 31 40 30 44Z" stroke="#9CAF88" stroke-width="0.9" fill="none"/>
+                <path d="M30 44 C19 42 12 37 16 26 C23 34 28 42 30 44Z" stroke="#C9A99A" stroke-width="0.8" fill="none" opacity="0.7"/>
+                <path d="M30 44 C41 42 48 37 44 26 C37 34 32 42 30 44Z" stroke="#C9A99A" stroke-width="0.8" fill="none" opacity="0.7"/>
+              </svg>
+            </div>
+            <h3>Equilibrio</h3>
+            <p>Cuarzos y remedios florales vibran junto al arreglo para harmonizar tu espacio.</p>
+          </div>
+          <div class="pillar">
+            <div class="pillar__icon">
+              <!-- Personalización: gema tallada -->
+              <svg viewBox="0 0 60 60" fill="none">
+                <!-- Silueta completa: corona + pabellón -->
+                <path d="M20 10 L40 10 L52 26 L30 52 L8 26 Z" stroke="#C9A99A" stroke-width="1.1" fill="none"/>
+                <!-- Girdle (cintura horizontal) -->
+                <line x1="8" y1="26" x2="52" y2="26" stroke="#9CAF88" stroke-width="0.85"/>
+                <!-- Facetas de corona -->
+                <line x1="20" y1="10" x2="30" y2="26" stroke="#9CAF88" stroke-width="0.7" opacity="0.85"/>
+                <line x1="40" y1="10" x2="30" y2="26" stroke="#9CAF88" stroke-width="0.7" opacity="0.85"/>
+                <!-- Facetas de pabellón -->
+                <line x1="20" y1="26" x2="30" y2="52" stroke="#9CAF88" stroke-width="0.65" opacity="0.65"/>
+                <line x1="40" y1="26" x2="30" y2="52" stroke="#9CAF88" stroke-width="0.65" opacity="0.65"/>
+              </svg>
+            </div>
+            <h3>Personalización</h3>
+            <p>Cada diseño refleja tu esencia: tus preferencias, colores y energía particular.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROCESO ─────────────────────────────────────────────── -->
+  <section class="section proceso" id="proceso">
+    <div class="proceso__bg">
+      <div class="proceso__orb proceso__orb--1"></div>
+    </div>
+    <div class="container">
+      <div class="section-label reveal">Cómo funciona</div>
+      <h2 class="section-title reveal">Tu viaje<br /><em>hacia la armonía</em></h2>
+      <div class="steps">
+        <div class="step reveal">
+          <div class="step__num">01</div>
+          <div class="step__line"></div>
+          <div class="step__content">
+            <h3>Primer Contacto</h3>
+            <p>Nos escribes y abrimos un espacio de escucha. Conversamos sobre tus intenciones, tus anhelos, lo que buscas transformar o atraer en tu vida y espacio.</p>
+          </div>
+        </div>
+        <div class="step reveal reveal--delay-1">
+          <div class="step__num">02</div>
+          <div class="step__line"></div>
+          <div class="step__content">
+            <h3>Diseño Energético</h3>
+            <p>Seleccionamos flores y botanicals alineados con tu intención. El arreglo se nutre con agua de cuarzos, remedios florales de Bach y otros sistemas vibracionales para potenciar su efecto.</p>
+          </div>
+        </div>
+        <div class="step reveal reveal--delay-2">
+          <div class="step__num">03</div>
+          <div class="step__line"></div>
+          <div class="step__content">
+            <h3>Entrega y Renovación</h3>
+            <p>Recibes tu composición floral en tu espacio. Según tu suscripción —semanal o quincenal— renovamos el arreglo para mantener la energía fresca y activa.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ingredientes vibracionales -->
+      <div class="ingredientes reveal">
+        <h3 class="ingredientes__title">Nuestros ingredientes vibracionales</h3>
+        <div class="ingredientes__grid">
+          <div class="ingrediente">
+            <div class="ingrediente__icon">
+              <!-- Agua de Cuarzos: gota de agua con cristal -->
+              <svg viewBox="0 0 50 50" fill="none">
+                <path d="M25 7 C25 7 12 22 12 31 C12 39.4 17.9 45 25 45 C32.1 45 38 39.4 38 31 C38 22 25 7 25 7Z" stroke="#C9A99A" stroke-width="0.9" fill="none"/>
+                <line x1="25" y1="22" x2="25" y2="39" stroke="#9CAF88" stroke-width="0.7"/>
+                <line x1="18" y1="31" x2="25" y2="23" stroke="#9CAF88" stroke-width="0.6"/>
+                <line x1="32" y1="31" x2="25" y2="23" stroke="#9CAF88" stroke-width="0.6"/>
+              </svg>
+            </div>
+            <span>Agua de Cuarzos</span>
+          </div>
+          <div class="ingrediente">
+            <div class="ingrediente__icon">
+              <!-- Remedios de Bach: flor 5 pétalos -->
+              <svg viewBox="0 0 50 50" fill="none">
+                <ellipse cx="25" cy="14" rx="4" ry="9" stroke="#9CAF88" stroke-width="0.9" fill="none"/>
+                <ellipse cx="25" cy="14" rx="4" ry="9" stroke="#9CAF88" stroke-width="0.9" fill="none" transform="rotate(72 25 25)"/>
+                <ellipse cx="25" cy="14" rx="4" ry="9" stroke="#9CAF88" stroke-width="0.9" fill="none" transform="rotate(144 25 25)"/>
+                <ellipse cx="25" cy="14" rx="4" ry="9" stroke="#9CAF88" stroke-width="0.9" fill="none" transform="rotate(216 25 25)"/>
+                <ellipse cx="25" cy="14" rx="4" ry="9" stroke="#9CAF88" stroke-width="0.9" fill="none" transform="rotate(288 25 25)"/>
+                <circle cx="25" cy="25" r="3" stroke="#C9A99A" stroke-width="0.9" fill="none"/>
+                <circle cx="25" cy="25" r="1" fill="#C9A99A" opacity="0.6"/>
+              </svg>
+            </div>
+            <span>Remedios de Bach</span>
+          </div>
+          <div class="ingrediente">
+            <div class="ingrediente__icon">
+              <!-- Botánica Intencional: retoño de planta -->
+              <svg viewBox="0 0 50 50" fill="none">
+                <!-- Tallo principal -->
+                <path d="M25 44 C25 38 25 28 25 17" stroke="#9CAF88" stroke-width="1.1" stroke-linecap="round" fill="none"/>
+                <!-- Hoja izquierda -->
+                <path d="M25 33 C20 29 12 30 11 23 C17 18 23 24 25 33Z" stroke="#9CAF88" stroke-width="0.9" fill="none"/>
+                <!-- Hoja derecha -->
+                <path d="M25 26 C30 22 38 23 39 16 C33 11 27 17 25 26Z" stroke="#C9A99A" stroke-width="0.9" fill="none"/>
+                <!-- Brote en la punta -->
+                <path d="M25 17 C23 13 24 9 25 8 C26 9 27 13 25 17Z" stroke="#C9A99A" stroke-width="0.85" fill="none"/>
+                <!-- Tierra / base -->
+                <path d="M17 44 Q25 42 33 44" stroke="#9CAF88" stroke-width="0.8" fill="none" opacity="0.55"/>
+              </svg>
+            </div>
+            <span>Botánica Intencional</span>
+          </div>
+          <div class="ingrediente">
+            <div class="ingrediente__icon">
+              <!-- Sistemas Vibracionales: ondas -->
+              <svg viewBox="0 0 50 50" fill="none">
+                <path d="M6 17 Q11 12 15 17 Q19 22 23 17 Q27 12 31 17 Q35 22 39 17 Q43 12 44 17" stroke="#9CAF88" stroke-width="0.9" fill="none"/>
+                <path d="M6 25 Q11 20 15 25 Q19 30 23 25 Q27 20 31 25 Q35 30 39 25 Q43 20 44 25" stroke="#C9A99A" stroke-width="0.9" fill="none"/>
+                <path d="M6 33 Q11 28 15 33 Q19 38 23 33 Q27 28 31 33 Q35 38 39 33 Q43 28 44 33" stroke="#9CAF88" stroke-width="0.8" fill="none" opacity="0.7"/>
+              </svg>
+            </div>
+            <span>Sistemas Vibracionales</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SUSCRIPCIONES ─────────────────────────────────────── -->
+  <section class="section suscripciones" id="suscripciones">
+    <div class="container">
+      <div class="section-label reveal">Planes</div>
+      <h2 class="section-title reveal">Suscripciones<br /><em>a tu medida</em></h2>
+      <p class="section-intro reveal">
+        Todos los diseños son completamente personalizados. Los precios varían según tus necesidades,<br />
+        por eso iniciamos con una conversación para cotizar juntos.
+      </p>
+      <ul class="plans__shared reveal">
+        <li>Diseño 100% personalizado</li>
+        <li>Agua de cuarzos incluida</li>
+        <li>Remedios florales de Bach</li>
+        <li>Seguimiento energético</li>
+      </ul>
+      <div class="plans">
+        <div class="plan reveal">
+          <div class="plan__badge plan__badge--featured">Recomendado</div>
+          <div class="plan__icon">
+            <svg viewBox="0 0 80 80" fill="none">
+              <circle cx="40" cy="40" r="30" stroke="#8B7355" stroke-width="1.4" fill="none" opacity="0.45"/>
+              <path d="M40 13 Q54 28 40 42 Q26 28 40 13Z" stroke="#9CAF88" stroke-width="2" fill="none"/>
+              <path d="M40 42 Q54 56 40 67 Q26 56 40 42Z" stroke="#C9A99A" stroke-width="1.8" fill="none"/>
+              <path d="M13 40 Q28 26 40 40 Q28 54 13 40Z" stroke="#9CAF88" stroke-width="1.8" fill="none"/>
+              <path d="M67 40 Q52 26 40 40 Q52 54 67 40Z" stroke="#9CAF88" stroke-width="1.7" fill="none"/>
+            </svg>
+          </div>
+          <h3>Semanal</h3>
+          <p class="plan__desc">Un arreglo floral nuevo cada semana. Ideal para mantener la energía de tu espacio siempre renovada y activa.</p>
+          <a href="#contacto" class="btn btn--outline">Cotizar semanal</a>
+        </div>
+        <div class="plan plan--featured reveal reveal--delay-1">
+          <div class="plan__icon">
+            <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="40" r="32" stroke="#C9A99A" stroke-width="1" fill="none"/><circle cx="40" cy="40" r="20" stroke="#9CAF88" stroke-width="0.8" fill="none"/><path d="M40 20 Q50 30 40 40 Q30 30 40 20Z" stroke="#C9A99A" stroke-width="1.2" fill="none"/><path d="M60 40 Q50 50 40 40 Q50 30 60 40Z" stroke="#9CAF88" stroke-width="1.1" fill="none"/><path d="M40 60 Q30 50 40 40 Q50 50 40 60Z" stroke="#C9A99A" stroke-width="1.1" fill="none"/><path d="M20 40 Q30 30 40 40 Q30 50 20 40Z" stroke="#9CAF88" stroke-width="1" fill="none"/><circle cx="40" cy="40" r="4" stroke="#C9A99A" stroke-width="0.9" fill="none"/></svg>
+          </div>
+          <h3>Quincenal</h3>
+          <p class="plan__desc">Un arreglo floral renovado cada dos semanas. El equilibrio perfecto entre transformación continua y profundidad en cada proceso.</p>
+          <a href="#contacto" class="btn btn--primary">Cotizar quincenal</a>
+        </div>
+      </div>
+      <p class="plans__note reveal">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="#9CAF88" stroke-width="1"/><line x1="8" y1="7" x2="8" y2="11" stroke="#9CAF88" stroke-width="1.2"/><circle cx="8" cy="5" r="0.8" fill="#9CAF88"/></svg>
+        Los precios son personalizados según tus necesidades. Contáctanos para recibir tu cotización.
+      </p>
+    </div>
+  </section>
+
+  <!-- ─── NUESTRO TRABAJO ─────────────────────────────────────── -->
+  <section class="section nuestro-trabajo" id="trabajo">
+    <div class="container">
+      <div class="nuestro-trabajo__grid">
+        <div class="nuestro-trabajo__text reveal">
+          <div class="section-label">Nuestro trabajo</div>
+          <h2 class="section-title">Arreglos que<br /><em>hablan por sí solos</em></h2>
+          <p>Cada composición que creamos es única, nutrida con intención y energía. Explora nuestra galería y encuentra la inspiración para tu propio proceso floral.</p>
+          <a href="galeria.html" class="btn btn--outline reveal reveal--delay-1">Ver galería completa</a>
+        </div>
+        <div class="nuestro-trabajo__mosaic reveal reveal--delay-1">
+          <div class="trabajo__img-wrap trabajo__img-wrap--tall">
+            <img src="imagenes/1.png" alt="Arreglo floral" />
+          </div>
+          <div class="trabajo__img-stack">
+            <div class="trabajo__img-wrap">
+              <img src="imagenes/3.png" alt="Arreglo floral" />
+            </div>
+            <div class="trabajo__img-wrap">
+              <img src="imagenes/5.png" alt="Arreglo floral" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── INSTAGRAM STRIP ───────────────────────────────────── -->
+  <section class="insta-strip">
+    <div class="container insta-strip__inner reveal">
+      <div class="insta-strip__text">
+        <p>Sigue nuestra energía en Instagram</p>
+        <span>@florenarmonia</span>
+      </div>
+      <a href="https://www.instagram.com/florenarmonia/" target="_blank" rel="noopener noreferrer" class="btn btn--insta">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.6"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+        Ver en Instagram
+      </a>
+    </div>
+  </section>
+
+  <!-- ─── CONTACTO ──────────────────────────────────────────── -->
+  <section class="section contacto" id="contacto">
+    <div class="contacto__bg">
+      <div class="contacto__orb contacto__orb--1"></div>
+      <div class="contacto__orb contacto__orb--2"></div>
+    </div>
+    <div class="container contacto__inner">
+      <div class="contacto__deco reveal">
+        <svg viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="150" cy="150" r="120" stroke="#C9A99A" stroke-width="0.6" fill="none" opacity="0.3"/>
+          <circle cx="150" cy="150" r="90" stroke="#9CAF88" stroke-width="0.6" fill="none" opacity="0.25"/>
+          <path d="M150 30 Q175 70 150 110 Q125 70 150 30Z" stroke="#C9A99A" stroke-width="1" fill="none" opacity="0.5"/>
+          <path d="M270 150 Q230 175 190 150 Q230 125 270 150Z" stroke="#9CAF88" stroke-width="1" fill="none" opacity="0.5"/>
+          <path d="M150 270 Q125 230 150 190 Q175 230 150 270Z" stroke="#C9A99A" stroke-width="1" fill="none" opacity="0.5"/>
+          <path d="M30 150 Q70 125 110 150 Q70 175 30 150Z" stroke="#9CAF88" stroke-width="1" fill="none" opacity="0.5"/>
+          <path d="M150 60 Q175 90 150 120 Q125 90 150 60Z" stroke="#C9A99A" stroke-width="0.8" fill="none" opacity="0.4"/>
+          <path d="M240 150 Q215 170 190 150 Q215 130 240 150Z" stroke="#9CAF88" stroke-width="0.8" fill="none" opacity="0.4"/>
+          <path d="M150 240 Q125 210 150 180 Q175 210 150 240Z" stroke="#C9A99A" stroke-width="0.8" fill="none" opacity="0.4"/>
+          <path d="M60 150 Q85 130 110 150 Q85 170 60 150Z" stroke="#9CAF88" stroke-width="0.8" fill="none" opacity="0.4"/>
+          <circle cx="150" cy="150" r="12" stroke="#C9A99A" stroke-width="0.9" fill="none" opacity="0.6"/>
+          <circle cx="150" cy="150" r="5" stroke="#9CAF88" stroke-width="0.9" fill="none" opacity="0.6"/>
+        </svg>
+      </div>
+      <div class="contacto__content">
+        <div class="section-label reveal">Contacto</div>
+        <h2 class="section-title reveal">Comienza tu<br /><em>proceso floral</em></h2>
+        <p class="reveal">
+          Cuéntanos tus intenciones. Juntos diseñaremos la composición floral que acompañe tu camino hacia la armonía.
+        </p>
+        <form class="contacto__form reveal reveal--delay-1" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono celular</label>
+              <div class="phone-input">
+                <select name="lada" id="lada" class="phone-input__lada">
+                  <option value="+52">MX +52</option>
+                  <option value="+1">US +1</option>
+                  <option value="+54">AR +54</option>
+                  <option value="+57">CO +57</option>
+                  <option value="+56">CL +56</option>
+                  <option value="+51">PE +51</option>
+                  <option value="+58">VE +58</option>
+                  <option value="+34">ES +34</option>
+                  <option value="+593">EC +593</option>
+                  <option value="+598">UY +598</option>
+                  <option value="+591">BO +591</option>
+                  <option value="+595">PY +595</option>
+                  <option value="+506">CR +506</option>
+                  <option value="+507">PA +507</option>
+                  <option value="+503">SV +503</option>
+                  <option value="+502">GT +502</option>
+                  <option value="+504">HN +504</option>
+                  <option value="+505">NI +505</option>
+                </select>
+                <input type="tel" id="telefono" name="telefono" placeholder="55 0000 0000" required />
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="suscripcion">Tipo de suscripción de interés</label>
+            <select id="suscripcion" name="suscripcion">
+              <option value="">Selecciona una opción</option>
+              <option value="semanal">Semanal</option>
+              <option value="quincenal">Quincenal</option>
+              <option value="regalo">Regalo especial</option>
+              <option value="otro">Otro / No sé aún</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="intencion">¿Cuál es tu intención? <span class="label-hint">(cuéntanos lo que buscas)</span></label>
+            <textarea id="intencion" name="intencion" rows="4" placeholder="Comparte tus anhelos, lo que deseas transformar, atraer o sanar en tu espacio y vida..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Enviar mi intención</button>
+        </form>
+        <div class="contacto__form-success" id="formSuccess">
+          <div class="success-icon">
+            <svg viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="24" stroke="#9CAF88" stroke-width="1.2"/><path d="M20 30 L27 37 L40 23" stroke="#9CAF88" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>¡Gracias por escribirnos!</h3>
+          <p>Recibimos tu intención. Muy pronto nos pondremos en contacto contigo para comenzar tu proceso floral.</p>
+        </div>
+        <div class="contacto__social reveal reveal--delay-2">
+          <p>O escríbenos directamente en Instagram</p>
+          <a href="https://www.instagram.com/florenarmonia/" target="_blank" rel="noopener noreferrer" class="social-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.6"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+            @florenarmonia
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── DONDE ENCONTRARNOS ──────────────────────────────── -->
+  <section class="section donde-encontrarnos" id="ubicacion">
+    <div class="container">
+      <div class="donde__header">
+        <div class="section-label reveal">Visítanos</div>
+        <h2 class="section-title reveal">Donde<br /><em>encontrarnos</em></h2>
+        <div class="donde__address reveal">
+          <svg width="16" height="20" viewBox="0 0 16 20" fill="none">
+            <path d="M8 0C3.6 0 0 3.6 0 8c0 5.4 8 12 8 12s8-6.6 8-12c0-4.4-3.6-8-8-8Zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z" fill="#8B7355" opacity="0.7"/>
+          </svg>
+          <span>Naciones Unidas 5461, Zapopan, Jalisco</span>
+        </div>
+      </div>
+    </div>
+    <div class="donde__mapa-wrap reveal">
+      <iframe
+        class="donde__mapa"
+        src="https://maps.google.com/maps?q=Naciones+Unidas+5461,+Zapopan,+Jalisco,+México&output=embed&hl=es&z=15"
+        width="100%"
+        height="420"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Ubicación Flor en Armonía">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__logo">
+        <img src="Logo/Logo.png" alt="Flor en Armonía" />
+      </div>
+      <p class="footer__phrase"><em>Cada flor, una intención. Cada arreglo, un camino.</em></p>
+      <div class="footer__links">
+        <a href="#filosofia">Filosofía</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#suscripciones">Suscripciones</a>
+        <a href="galeria.html">Nuestro trabajo</a>
+        <a href="https://www.instagram.com/florenarmonia/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+      <p class="footer__copy">© 2026 Flor en Armonía · Concepto Floral</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

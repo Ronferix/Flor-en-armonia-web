@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nuestro trabajo — Flor en Armonía</title>
+  <meta name="description" content="Nuestro trabajo de arreglos florales de Flor en Armonía. Composiciones con intención, cuarzos y remedios florales de Bach." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="galeria.css" />
+</head>
+<body>
+
+  <!-- ─── NAV ─────────────────────────────────────────────── -->
+  <header class="nav scrolled" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="Logo/Logo.png" alt="Flor en Armonía" />
+      </a>
+      <nav class="nav__links">
+        <a href="index.html#filosofia">Filosofía</a>
+        <a href="index.html#proceso">Proceso</a>
+        <a href="index.html#suscripciones">Suscripciones</a>
+        <a href="galeria.html" style="color: var(--taupe);">Nuestro trabajo</a>
+        <a href="index.html#contacto" class="nav__cta">Cotizar</a>
+      </nav>
+      <button class="nav__burger" aria-label="Menú" id="burger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="index.html#filosofia" class="mobile-link">Filosofía</a>
+      <a href="index.html#proceso" class="mobile-link">Proceso</a>
+      <a href="index.html#suscripciones" class="mobile-link">Suscripciones</a>
+      <a href="galeria.html" class="mobile-link">Nuestro trabajo</a>
+      <a href="index.html#contacto" class="mobile-link">Cotizar</a>
+    </div>
+  </header>
+
+  <!-- ─── ENCABEZADO ──────────────────────────────────────── -->
+  <section class="galeria-hero">
+    <div class="container">
+      <div class="section-label">Nuestro trabajo</div>
+      <h1 class="section-title">Nuestro<br /><em>trabajo floral</em></h1>
+    </div>
+  </section>
+
+  <!-- ─── SLIDESHOW ───────────────────────────────────────── -->
+  <section class="slideshow">
+    <div class="slideshow__track" id="slideshowTrack"></div>
+
+    <button class="slideshow__btn slideshow__btn--prev" id="prevBtn" aria-label="Anterior">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+        <polyline points="15 18 9 12 15 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    <button class="slideshow__btn slideshow__btn--next" id="nextBtn" aria-label="Siguiente">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+        <polyline points="9 18 15 12 9 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+    <div class="slideshow__dots" id="slideshowDots"></div>
+    <div class="slideshow__counter" id="slideshowCounter"></div>
+  </section>
+
+  <!-- ─── TESTIMONIOS ─────────────────────────────────────── -->
+  <section class="testimonios-section">
+    <div class="container">
+      <div class="section-label">Testimonios</div>
+      <h2 class="section-title">Lo que dicen<br /><em>nuestros clientes</em></h2>
+    </div>
+    <div class="testimonios__marquee-wrap">
+      <div class="testimonios__inner" id="testimoniosInner"></div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACTO ───────────────────────────────────────── -->
+  <section class="section galeria-contacto">
+    <div class="container galeria-contacto__inner">
+      <div class="section-label">Contacto</div>
+      <h2 class="section-title">Comienza tu<br /><em>proceso floral</em></h2>
+      <p class="galeria-contacto__lead">
+        Cuéntanos tus intenciones. Juntos diseñaremos la composición floral que acompañe tu camino hacia la armonía.
+      </p>
+      <form class="contacto__form galeria-contacto__form" id="contactFormGaleria" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="gNombre">Nombre</label>
+            <input type="text" id="gNombre" name="nombre" placeholder="Tu nombre" required />
+          </div>
+          <div class="form-group">
+            <label for="gTelefono">Teléfono celular</label>
+            <div class="phone-input">
+              <select name="lada" id="gLada" class="phone-input__lada">
+                <option value="+52">MX +52</option>
+                <option value="+1">US +1</option>
+                <option value="+54">AR +54</option>
+                <option value="+57">CO +57</option>
+                <option value="+56">CL +56</option>
+                <option value="+51">PE +51</option>
+                <option value="+58">VE +58</option>
+                <option value="+34">ES +34</option>
+                <option value="+593">EC +593</option>
+                <option value="+598">UY +598</option>
+                <option value="+591">BO +591</option>
+                <option value="+595">PY +595</option>
+                <option value="+506">CR +506</option>
+                <option value="+507">PA +507</option>
+                <option value="+503">SV +503</option>
+                <option value="+502">GT +502</option>
+                <option value="+504">HN +504</option>
+                <option value="+505">NI +505</option>
+              </select>
+              <input type="tel" id="gTelefono" name="telefono" placeholder="55 0000 0000" required />
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="gSuscripcion">Tipo de suscripción de interés</label>
+          <select id="gSuscripcion" name="suscripcion">
+            <option value="">Selecciona una opción</option>
+            <option value="semanal">Semanal</option>
+            <option value="quincenal">Quincenal</option>
+            <option value="regalo">Regalo especial</option>
+            <option value="otro">Otro / No sé aún</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="gIntencion">¿Cuál es tu intención? <span class="label-hint">(cuéntanos lo que buscas)</span></label>
+          <textarea id="gIntencion" name="intencion" rows="4" placeholder="Comparte tus anhelos, lo que deseas transformar, atraer o sanar en tu espacio y vida..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">Enviar mi intención</button>
+      </form>
+      <div class="contacto__form-success" id="formSuccessGaleria">
+        <div class="success-icon">
+          <svg viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="24" stroke="#9CAF88" stroke-width="1.2"/><path d="M20 30 L27 37 L40 23" stroke="#9CAF88" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>¡Gracias por escribirnos!</h3>
+        <p>Recibimos tu intención. Muy pronto nos pondremos en contacto contigo para comenzar tu proceso floral.</p>
+      </div>
+      <div class="contacto__social galeria-contacto__social">
+        <p>O escríbenos directamente en Instagram</p>
+        <a href="https://www.instagram.com/florenarmonia/" target="_blank" rel="noopener noreferrer" class="social-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.6"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          @florenarmonia
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ──────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__logo">
+        <img src="Logo/Logo.png" alt="Flor en Armonía" />
+      </div>
+      <p class="footer__phrase"><em>Cada flor, una intención. Cada arreglo, un camino.</em></p>
+      <div class="footer__links">
+        <a href="index.html#filosofia">Filosofía</a>
+        <a href="index.html#proceso">Proceso</a>
+        <a href="index.html#suscripciones">Suscripciones</a>
+        <a href="galeria.html">Nuestro trabajo</a>
+        <a href="https://www.instagram.com/florenarmonia/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+      <p class="footer__copy">© 2026 Flor en Armonía · Concepto Floral</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="galeria.js"></script>
+</body>
+</html>

@@ -868,17 +868,32 @@ h1, h2, h3, h4 {
 .trabajo__dots {
   display: flex;
   justify-content: center;
-  gap: 8px;
+  gap: 4px;
 }
 .trabajo__dot {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.trabajo__dot::after {
+  content: '';
+  display: block;
   width: 6px;
   height: 6px;
   border-radius: 50%;
   background: rgba(139,115,85,0.25);
   transition: background 0.3s, transform 0.3s;
-  cursor: pointer;
+  pointer-events: none;
 }
-.trabajo__dot.active {
+.trabajo__dot.active::after {
   background: var(--taupe);
   transform: scale(1.35);
 }
@@ -972,10 +987,10 @@ h1, h2, h3, h4 {
 }
 .form-group label {
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: var(--text);
+  color: var(--dark);
 }
 .label-hint {
   text-transform: none;
@@ -1262,3 +1277,41 @@ h1, h2, h3, h4 {
 ::-webkit-scrollbar-track { background: var(--cream); }
 ::-webkit-scrollbar-thumb { background: rgba(139,115,85,0.3); border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: rgba(139,115,85,0.5); }
+
+/* ── Focus visible (accesibilidad de teclado) ─────────────── */
+:focus-visible {
+  outline: 2px solid var(--taupe);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+.hero__scroll:focus-visible {
+  outline-offset: 5px;
+  border-radius: 50%;
+}
+.nav__burger:focus-visible {
+  outline-offset: 5px;
+  border-radius: 4px;
+}
+.lang-btn:focus-visible {
+  outline-offset: 2px;
+}
+.trabajo__dot:focus-visible {
+  outline-offset: 4px;
+  border-radius: 50%;
+}
+
+/* ── Reduce motion (accesibilidad) ────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  html { scroll-behavior: auto; }
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}

@@ -19,22 +19,32 @@
         <img src="Logo/Logo.png" alt="Flor en Armonía" />
       </a>
       <nav class="nav__links">
-        <a href="#filosofia">Filosofía</a>
-        <a href="#proceso">Proceso</a>
-        <a href="#suscripciones">Suscripciones</a>
-        <a href="galeria.html">Nuestro trabajo</a>
-        <a href="#contacto" class="nav__cta">Cotizar</a>
+        <a href="#filosofia" data-i18n="nav-filosofia">Filosofía</a>
+        <a href="#proceso" data-i18n="nav-proceso">Proceso</a>
+        <a href="#suscripciones" data-i18n="nav-suscripciones">Suscripciones</a>
+        <a href="galeria.html" data-i18n="nav-trabajo">Nuestro trabajo</a>
+        <a href="#contacto" class="nav__cta" data-i18n="nav-cotizar">Cotizar</a>
       </nav>
+      <div class="lang-switcher">
+        <button class="lang-btn" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="pt">PT</button>
+      </div>
       <button class="nav__burger" aria-label="Menú" id="burger">
         <span></span><span></span><span></span>
       </button>
     </div>
     <div class="nav__mobile" id="mobileMenu">
-      <a href="#filosofia" class="mobile-link">Filosofía</a>
-      <a href="#proceso" class="mobile-link">Proceso</a>
-      <a href="#suscripciones" class="mobile-link">Suscripciones</a>
-      <a href="galeria.html" class="mobile-link">Nuestro trabajo</a>
-      <a href="#contacto" class="mobile-link">Cotizar</a>
+      <a href="#filosofia" class="mobile-link" data-i18n="nav-filosofia">Filosofía</a>
+      <a href="#proceso" class="mobile-link" data-i18n="nav-proceso">Proceso</a>
+      <a href="#suscripciones" class="mobile-link" data-i18n="nav-suscripciones">Suscripciones</a>
+      <a href="galeria.html" class="mobile-link" data-i18n="nav-trabajo">Nuestro trabajo</a>
+      <a href="#contacto" class="mobile-link" data-i18n="nav-cotizar">Cotizar</a>
+      <div class="lang-switcher lang-switcher--mobile">
+        <button class="lang-btn" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="pt">PT</button>
+      </div>
     </div>
   </header>
 
@@ -73,7 +83,7 @@
           <img src="Logo/Logo.png" alt="Flor en Armonía" class="hero__logo" />
         </div>
       </div>
-      <p class="hero__tagline reveal reveal--delay-1">
+      <p class="hero__tagline reveal reveal--delay-1" data-i18n-html="hero-tagline">
         Darle sentido a tus intenciones<br />a través de arreglos y composiciones florales.
       </p>
       <div class="hero__divider reveal reveal--delay-2">
@@ -81,8 +91,8 @@
         <svg width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3" fill="#C9A99A"/><circle cx="10" cy="10" r="7" stroke="#C9A99A" stroke-width="0.8" fill="none"/></svg>
         <span></span>
       </div>
-      <p class="hero__sub reveal reveal--delay-3">Suscripciones · Arreglos personalizados · Servicio intencionado</p>
-      <a href="#filosofia" class="btn btn--primary reveal reveal--delay-4">Inicia tu proceso</a>
+      <p class="hero__sub reveal reveal--delay-3" data-i18n="hero-sub">Suscripciones · Arreglos personalizados · Servicio intencionado</p>
+      <a href="#filosofia" class="btn btn--primary reveal reveal--delay-4" data-i18n="hero-cta">Inicia tu proceso</a>
     </div>
     <a href="#filosofia" class="hero__scroll" aria-label="Ir a la siguiente sección">
       <svg class="hero__scroll-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -94,19 +104,19 @@
   <!-- ─── FILOSOFÍA ─────────────────────────────────────────── -->
   <section class="section filosofia" id="filosofia">
     <div class="container">
-      <div class="section-label reveal">Nuestra esencia</div>
-      <h2 class="section-title reveal">
+      <div class="section-label reveal" data-i18n="fil-label">Nuestra esencia</div>
+      <h2 class="section-title reveal" data-i18n-html="fil-title">
         Equilibrio y limpieza<br /><em>para tu energía</em>
       </h2>
       <div class="filosofia__grid">
         <div class="filosofia__text reveal">
-          <p class="lead">
+          <p class="lead" data-i18n="fil-lead">
             Buscamos favorecer y resaltar tus espacios mientras equilibramos y limpiamos tu energía.
           </p>
-          <p>
+          <p data-i18n="fil-p1">
             Cada arreglo floral que creamos nace de una intención consciente. No son solo flores: son vehículos de transformación, portadores de anhelos y catalizadores de bienestar.
           </p>
-          <p>
+          <p data-i18n="fil-p2">
             Creemos que la belleza y la armonía espiritual van de la mano. Por eso cada composición se nutre con agua de cuarzos, remedios florales de Bach y otros sistemas vibracionales, para que la flor sea tanto estética como medicina para el alma.
           </p>
         </div>
@@ -119,8 +129,8 @@
                 <path d="M30 28 C30 28 25 34 25 38 C25 41.3 27.2 44 30 44 C32.8 44 35 41.3 35 38 C35 34 30 28 30 28Z" stroke="#C9A99A" stroke-width="0.9" fill="none"/>
               </svg>
             </div>
-            <h3>Intención</h3>
-            <p>Todo diseño parte de tus anhelos y propósitos más profundos.</p>
+            <h3 data-i18n="fil-pillar1-title">Intención</h3>
+            <p data-i18n="fil-pillar1-text">Todo diseño parte de tus anhelos y propósitos más profundos.</p>
           </div>
           <div class="pillar">
             <div class="pillar__icon">
@@ -134,8 +144,8 @@
                 <path d="M30 44 C41 42 48 37 44 26 C37 34 32 42 30 44Z" stroke="#C9A99A" stroke-width="0.8" fill="none" opacity="0.7"/>
               </svg>
             </div>
-            <h3>Equilibrio</h3>
-            <p>Cuarzos y remedios florales vibran junto al arreglo para harmonizar tu espacio.</p>
+            <h3 data-i18n="fil-pillar2-title">Equilibrio</h3>
+            <p data-i18n="fil-pillar2-text">Cuarzos y remedios florales vibran junto al arreglo para harmonizar tu espacio.</p>
           </div>
           <div class="pillar">
             <div class="pillar__icon">
@@ -153,8 +163,8 @@
                 <line x1="40" y1="26" x2="30" y2="52" stroke="#9CAF88" stroke-width="0.65" opacity="0.65"/>
               </svg>
             </div>
-            <h3>Personalización</h3>
-            <p>Cada diseño refleja tu esencia: tus preferencias, colores y energía particular.</p>
+            <h3 data-i18n="fil-pillar3-title">Personalización</h3>
+            <p data-i18n="fil-pillar3-text">Cada diseño refleja tu esencia: tus preferencias, colores y energía particular.</p>
           </div>
         </div>
       </div>
@@ -167,38 +177,38 @@
       <div class="proceso__orb proceso__orb--1"></div>
     </div>
     <div class="container">
-      <div class="section-label reveal">Cómo funciona</div>
-      <h2 class="section-title reveal">Tu viaje<br /><em>hacia la armonía</em></h2>
+      <div class="section-label reveal" data-i18n="proc-label">Cómo funciona</div>
+      <h2 class="section-title reveal" data-i18n-html="proc-title">Tu viaje<br /><em>hacia la armonía</em></h2>
       <div class="steps">
         <div class="step reveal">
           <div class="step__num">01</div>
           <div class="step__line"></div>
           <div class="step__content">
-            <h3>Primer Contacto</h3>
-            <p>Nos escribes y abrimos un espacio de escucha. Conversamos sobre tus intenciones, tus anhelos, lo que buscas transformar o atraer en tu vida y espacio.</p>
+            <h3 data-i18n="step1-title">Primer Contacto</h3>
+            <p data-i18n="step1-text">Nos escribes y abrimos un espacio de escucha. Conversamos sobre tus intenciones, tus anhelos, lo que buscas transformar o atraer en tu vida y espacio.</p>
           </div>
         </div>
         <div class="step reveal reveal--delay-1">
           <div class="step__num">02</div>
           <div class="step__line"></div>
           <div class="step__content">
-            <h3>Diseño Energético</h3>
-            <p>Seleccionamos flores y botanicals alineados con tu intención. El arreglo se nutre con agua de cuarzos, remedios florales de Bach y otros sistemas vibracionales para potenciar su efecto.</p>
+            <h3 data-i18n="step2-title">Diseño Energético</h3>
+            <p data-i18n="step2-text">Seleccionamos flores y botanicals alineados con tu intención. El arreglo se nutre con agua de cuarzos, remedios florales de Bach y otros sistemas vibracionales para potenciar su efecto.</p>
           </div>
         </div>
         <div class="step reveal reveal--delay-2">
           <div class="step__num">03</div>
           <div class="step__line"></div>
           <div class="step__content">
-            <h3>Entrega y Renovación</h3>
-            <p>Recibes tu composición floral en tu espacio. Según tu suscripción —semanal o quincenal— renovamos el arreglo para mantener la energía fresca y activa.</p>
+            <h3 data-i18n="step3-title">Entrega y Renovación</h3>
+            <p data-i18n="step3-text">Recibes tu composición floral en tu espacio. Según tu suscripción —semanal o quincenal— renovamos el arreglo para mantener la energía fresca y activa.</p>
           </div>
         </div>
       </div>
 
       <!-- Ingredientes vibracionales -->
       <div class="ingredientes reveal">
-        <h3 class="ingredientes__title">Nuestros ingredientes vibracionales</h3>
+        <h3 class="ingredientes__title" data-i18n="ing-title">Nuestros ingredientes vibracionales</h3>
         <div class="ingredientes__grid">
           <div class="ingrediente">
             <div class="ingrediente__icon">
@@ -210,7 +220,7 @@
                 <line x1="32" y1="31" x2="25" y2="23" stroke="#9CAF88" stroke-width="0.6"/>
               </svg>
             </div>
-            <span>Agua de Cuarzos</span>
+            <span data-i18n="ing1">Agua de Cuarzos</span>
           </div>
           <div class="ingrediente">
             <div class="ingrediente__icon">
@@ -225,7 +235,7 @@
                 <circle cx="25" cy="25" r="1" fill="#C9A99A" opacity="0.6"/>
               </svg>
             </div>
-            <span>Remedios de Bach</span>
+            <span data-i18n="ing2">Remedios de Bach</span>
           </div>
           <div class="ingrediente">
             <div class="ingrediente__icon">
@@ -243,7 +253,7 @@
                 <path d="M17 44 Q25 42 33 44" stroke="#9CAF88" stroke-width="0.8" fill="none" opacity="0.55"/>
               </svg>
             </div>
-            <span>Botánica Intencional</span>
+            <span data-i18n="ing3">Botánica Intencional</span>
           </div>
           <div class="ingrediente">
             <div class="ingrediente__icon">
@@ -254,7 +264,7 @@
                 <path d="M6 33 Q11 28 15 33 Q19 38 23 33 Q27 28 31 33 Q35 38 39 33 Q43 28 44 33" stroke="#9CAF88" stroke-width="0.8" fill="none" opacity="0.7"/>
               </svg>
             </div>
-            <span>Sistemas Vibracionales</span>
+            <span data-i18n="ing4">Sistemas Vibracionales</span>
           </div>
         </div>
       </div>
@@ -264,21 +274,21 @@
   <!-- ─── SUSCRIPCIONES ─────────────────────────────────────── -->
   <section class="section suscripciones" id="suscripciones">
     <div class="container">
-      <div class="section-label reveal">Planes</div>
-      <h2 class="section-title reveal">Suscripciones<br /><em>a tu medida</em></h2>
-      <p class="section-intro reveal">
+      <div class="section-label reveal" data-i18n="sus-label">Planes</div>
+      <h2 class="section-title reveal" data-i18n-html="sus-title">Suscripciones<br /><em>a tu medida</em></h2>
+      <p class="section-intro reveal" data-i18n-html="sus-intro">
         Todos los diseños son completamente personalizados. Los precios varían según tus necesidades,<br />
         por eso iniciamos con una conversación para cotizar juntos.
       </p>
       <ul class="plans__shared reveal">
-        <li>Diseño 100% personalizado</li>
-        <li>Agua de cuarzos incluida</li>
-        <li>Remedios florales de Bach</li>
-        <li>Seguimiento energético</li>
+        <li data-i18n="sus-feat1">Diseño 100% personalizado</li>
+        <li data-i18n="sus-feat2">Agua de cuarzos incluida</li>
+        <li data-i18n="sus-feat3">Remedios florales de Bach</li>
+        <li data-i18n="sus-feat4">Seguimiento energético</li>
       </ul>
       <div class="plans">
         <div class="plan reveal">
-          <div class="plan__badge plan__badge--featured">Recomendado</div>
+          <div class="plan__badge plan__badge--featured" data-i18n="sus-badge">Recomendado</div>
           <div class="plan__icon">
             <svg viewBox="0 0 80 80" fill="none">
               <circle cx="40" cy="40" r="30" stroke="#8B7355" stroke-width="1.4" fill="none" opacity="0.45"/>
@@ -288,22 +298,22 @@
               <path d="M67 40 Q52 26 40 40 Q52 54 67 40Z" stroke="#9CAF88" stroke-width="1.7" fill="none"/>
             </svg>
           </div>
-          <h3>Semanal</h3>
-          <p class="plan__desc">Un arreglo floral nuevo cada semana. Ideal para mantener la energía de tu espacio siempre renovada y activa.</p>
-          <a href="#contacto" class="btn btn--outline">Cotizar semanal</a>
+          <h3 data-i18n="plan1-name">Semanal</h3>
+          <p class="plan__desc" data-i18n="plan1-desc">Un arreglo floral nuevo cada semana. Ideal para mantener la energía de tu espacio siempre renovada y activa.</p>
+          <a href="#contacto" class="btn btn--outline" data-i18n="plan1-cta">Cotizar semanal</a>
         </div>
         <div class="plan plan--featured reveal reveal--delay-1">
           <div class="plan__icon">
             <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="40" r="32" stroke="#C9A99A" stroke-width="1" fill="none"/><circle cx="40" cy="40" r="20" stroke="#9CAF88" stroke-width="0.8" fill="none"/><path d="M40 20 Q50 30 40 40 Q30 30 40 20Z" stroke="#C9A99A" stroke-width="1.2" fill="none"/><path d="M60 40 Q50 50 40 40 Q50 30 60 40Z" stroke="#9CAF88" stroke-width="1.1" fill="none"/><path d="M40 60 Q30 50 40 40 Q50 50 40 60Z" stroke="#C9A99A" stroke-width="1.1" fill="none"/><path d="M20 40 Q30 30 40 40 Q30 50 20 40Z" stroke="#9CAF88" stroke-width="1" fill="none"/><circle cx="40" cy="40" r="4" stroke="#C9A99A" stroke-width="0.9" fill="none"/></svg>
           </div>
-          <h3>Quincenal</h3>
-          <p class="plan__desc">Un arreglo floral renovado cada dos semanas. El equilibrio perfecto entre transformación continua y profundidad en cada proceso.</p>
-          <a href="#contacto" class="btn btn--primary">Cotizar quincenal</a>
+          <h3 data-i18n="plan2-name">Quincenal</h3>
+          <p class="plan__desc" data-i18n="plan2-desc">Un arreglo floral renovado cada dos semanas. El equilibrio perfecto entre transformación continua y profundidad en cada proceso.</p>
+          <a href="#contacto" class="btn btn--primary" data-i18n="plan2-cta">Cotizar quincenal</a>
         </div>
       </div>
       <p class="plans__note reveal">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="#9CAF88" stroke-width="1"/><line x1="8" y1="7" x2="8" y2="11" stroke="#9CAF88" stroke-width="1.2"/><circle cx="8" cy="5" r="0.8" fill="#9CAF88"/></svg>
-        Los precios son personalizados según tus necesidades. Contáctanos para recibir tu cotización.
+        <span data-i18n="sus-note">Los precios son personalizados según tus necesidades. Contáctanos para recibir tu cotización.</span>
       </p>
     </div>
   </section>
@@ -313,10 +323,10 @@
     <div class="container">
       <div class="nuestro-trabajo__grid">
         <div class="nuestro-trabajo__text reveal">
-          <div class="section-label">Nuestro trabajo</div>
-          <h2 class="section-title">Arreglos que<br /><em>hablan por sí solos</em></h2>
-          <p>Cada composición que creamos es única, nutrida con intención y energía. Explora nuestra galería y encuentra la inspiración para tu propio proceso floral.</p>
-          <a href="galeria.html" class="btn btn--outline reveal reveal--delay-1">Ver galería completa</a>
+          <div class="section-label" data-i18n="trab-label">Nuestro trabajo</div>
+          <h2 class="section-title" data-i18n-html="trab-title">Arreglos que<br /><em>hablan por sí solos</em></h2>
+          <p data-i18n="trab-text">Cada composición que creamos es única, nutrida con intención y energía. Explora nuestra galería y encuentra la inspiración para tu propio proceso floral.</p>
+          <a href="galeria.html" class="btn btn--outline reveal reveal--delay-1" data-i18n="trab-cta">Ver galería completa</a>
         </div>
         <div class="nuestro-trabajo__mosaic reveal reveal--delay-1">
           <div class="trabajo__slider" id="trabajoSlider">
@@ -338,12 +348,12 @@
   <section class="insta-strip">
     <div class="container insta-strip__inner reveal">
       <div class="insta-strip__text">
-        <p>Sigue nuestra energía en Instagram</p>
+        <p data-i18n="insta-label">Sigue nuestra energía en Instagram</p>
         <span>@florenarmonia</span>
       </div>
       <a href="https://www.instagram.com/florenarmonia/" target="_blank" rel="noopener noreferrer" class="btn btn--insta">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.6"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
-        Ver en Instagram
+        <span data-i18n="insta-btn">Ver en Instagram</span>
       </a>
     </div>
   </section>
@@ -372,19 +382,19 @@
         </svg>
       </div>
       <div class="contacto__content">
-        <div class="section-label reveal">Contacto</div>
-        <h2 class="section-title reveal">Comienza tu<br /><em>proceso floral</em></h2>
-        <p class="reveal">
+        <div class="section-label reveal" data-i18n="cont-label">Contacto</div>
+        <h2 class="section-title reveal" data-i18n-html="cont-title">Comienza tu<br /><em>proceso floral</em></h2>
+        <p class="reveal" data-i18n="cont-text">
           Cuéntanos tus intenciones. Juntos diseñaremos la composición floral que acompañe tu camino hacia la armonía.
         </p>
         <form class="contacto__form reveal reveal--delay-1" id="contactForm" novalidate>
           <div class="form-row">
             <div class="form-group">
-              <label for="nombre">Nombre</label>
-              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+              <label for="nombre" data-i18n="label-nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" data-i18n-ph="ph-nombre" required />
             </div>
             <div class="form-group">
-              <label for="telefono">Teléfono celular</label>
+              <label for="telefono" data-i18n="label-telefono">Teléfono celular</label>
               <div class="phone-input">
                 <select name="lada" id="lada" class="phone-input__lada">
                   <option value="+52">MX +52</option>
@@ -411,30 +421,30 @@
             </div>
           </div>
           <div class="form-group">
-            <label for="suscripcion">Tipo de suscripción de interés</label>
+            <label for="suscripcion" data-i18n="label-suscripcion">Tipo de suscripción de interés</label>
             <select id="suscripcion" name="suscripcion">
-              <option value="">Selecciona una opción</option>
-              <option value="semanal">Semanal</option>
-              <option value="quincenal">Quincenal</option>
-              <option value="regalo">Regalo especial</option>
-              <option value="otro">Otro / No sé aún</option>
+              <option value="" data-i18n="opt-default">Selecciona una opción</option>
+              <option value="semanal" data-i18n="opt-semanal">Semanal</option>
+              <option value="quincenal" data-i18n="opt-quincenal">Quincenal</option>
+              <option value="regalo" data-i18n="opt-regalo">Regalo especial</option>
+              <option value="otro" data-i18n="opt-otro">Otro / No sé aún</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="intencion">¿Cuál es tu intención? <span class="label-hint">(cuéntanos lo que buscas)</span></label>
-            <textarea id="intencion" name="intencion" rows="4" placeholder="Comparte tus anhelos, lo que deseas transformar, atraer o sanar en tu espacio y vida..." required></textarea>
+            <label for="intencion"><span data-i18n="label-intencion">¿Cuál es tu intención?</span> <span class="label-hint" data-i18n="label-hint">(cuéntanos lo que buscas)</span></label>
+            <textarea id="intencion" name="intencion" rows="4" placeholder="Comparte tus anhelos, lo que deseas transformar, atraer o sanar en tu espacio y vida..." data-i18n-ph="ph-intencion" required></textarea>
           </div>
-          <button type="submit" class="btn btn--primary btn--full">Enviar mi intención</button>
+          <button type="submit" class="btn btn--primary btn--full" data-i18n="btn-submit">Enviar mi intención</button>
         </form>
         <div class="contacto__form-success" id="formSuccess">
           <div class="success-icon">
             <svg viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="24" stroke="#9CAF88" stroke-width="1.2"/><path d="M20 30 L27 37 L40 23" stroke="#9CAF88" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
-          <h3>¡Gracias por escribirnos!</h3>
-          <p>Recibimos tu intención. Muy pronto nos pondremos en contacto contigo para comenzar tu proceso floral.</p>
+          <h3 data-i18n="success-title">¡Gracias por escribirnos!</h3>
+          <p data-i18n="success-text">Recibimos tu intención. Muy pronto nos pondremos en contacto contigo para comenzar tu proceso floral.</p>
         </div>
         <div class="contacto__social reveal reveal--delay-2">
-          <p>O escríbenos directamente en Instagram</p>
+          <p data-i18n="social-text">O escríbenos directamente en Instagram</p>
           <a href="https://www.instagram.com/florenarmonia/" target="_blank" rel="noopener noreferrer" class="social-link">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.6"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
             @florenarmonia
@@ -448,8 +458,8 @@
   <section class="section donde-encontrarnos" id="ubicacion">
     <div class="container">
       <div class="donde__header">
-        <div class="section-label reveal">Visítanos</div>
-        <h2 class="section-title reveal">Donde<br /><em>encontrarnos</em></h2>
+        <div class="section-label reveal" data-i18n="donde-label">Visítanos</div>
+        <h2 class="section-title reveal" data-i18n-html="donde-title">Donde<br /><em>encontrarnos</em></h2>
         <div class="donde__address reveal">
           <svg width="16" height="20" viewBox="0 0 16 20" fill="none">
             <path d="M8 0C3.6 0 0 3.6 0 8c0 5.4 8 12 8 12s8-6.6 8-12c0-4.4-3.6-8-8-8Zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z" fill="#8B7355" opacity="0.7"/>
@@ -479,12 +489,12 @@
       <div class="footer__logo">
         <img src="Logo/Logo.png" alt="Flor en Armonía" />
       </div>
-      <p class="footer__phrase"><em>Cada flor, una intención. Cada arreglo, un camino.</em></p>
+      <p class="footer__phrase"><em data-i18n="footer-phrase">Cada flor, una intención. Cada arreglo, un camino.</em></p>
       <div class="footer__links">
-        <a href="#filosofia">Filosofía</a>
-        <a href="#proceso">Proceso</a>
-        <a href="#suscripciones">Suscripciones</a>
-        <a href="galeria.html">Nuestro trabajo</a>
+        <a href="#filosofia" data-i18n="nav-filosofia">Filosofía</a>
+        <a href="#proceso" data-i18n="nav-proceso">Proceso</a>
+        <a href="#suscripciones" data-i18n="nav-suscripciones">Suscripciones</a>
+        <a href="galeria.html" data-i18n="nav-trabajo">Nuestro trabajo</a>
         <a href="https://www.instagram.com/florenarmonia/" target="_blank" rel="noopener noreferrer">Instagram</a>
       </div>
       <p class="footer__copy">© 2026 Flor en Armonía · Concepto Floral</p>
@@ -492,6 +502,7 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="i18n.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

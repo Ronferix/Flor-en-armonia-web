@@ -277,6 +277,44 @@ h1, h2, h3, h4 {
   background: rgba(201,169,154,0.06);
 }
 
+/* ── Language switcher ────────────────────────────────────── */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.lang-btn {
+  background: none;
+  border: none;
+  font-family: var(--ff-body);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-light);
+  cursor: pointer;
+  padding: 5px 7px;
+  border-radius: 4px;
+  transition: color 0.2s, background 0.2s;
+  line-height: 1;
+}
+.lang-btn:hover { color: var(--taupe); }
+.lang-btn.active {
+  color: var(--taupe);
+  font-weight: 500;
+  background: rgba(139,115,85,0.08);
+}
+.lang-switcher--mobile {
+  padding: 16px 24px;
+  border-top: 1px solid rgba(0,0,0,0.05);
+  justify-content: center;
+  gap: 8px;
+}
+.lang-switcher--mobile .lang-btn {
+  font-size: 13px;
+  padding: 8px 12px;
+}
+
 /* ── HERO ─────────────────────────────────────────────────── */
 .hero {
   position: relative;
